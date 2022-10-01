@@ -50,11 +50,51 @@ open class Angle protected constructor(
         /**
          * Conversion factor for degrees to radians.
          */
-        private const val DEGREES_TO_RADIANS = PI / 180.0
+        const val DEGREES_TO_RADIANS = PI / 180.0
         /**
          * Conversion factor for radians to degrees.
          */
-        private const val RADIANS_TO_DEGREES = 180.0 / PI
+        const val RADIANS_TO_DEGREES = 180.0 / PI
+        /**
+         * Conversion factor for degrees to milliradians.
+         */
+        const val DEGREES_TO_MRAD = PI * 2.0 / 360.0
+        /**
+         * Conversion factor for milliradians to degrees.
+         */
+        const val MRAD_TO_DEGREES = 360.0 / PI / 2.0
+        /**
+         * Conversion factor for degrees to milliradians (NATO).
+         */
+        const val DEGREES_TO_MIL_NATO = 6400.0 / 360.0
+        /**
+         * Conversion factor for milliradians (NATO) to degrees.
+         */
+        const val MIL_NATO_TO_DEGREES = 360.0 / 6400.0
+        /**
+         * Conversion factor for degrees to milliradians (Warsaw Pact).
+         */
+        const val DEGREES_TO_MIL_WP = 6000.0 / 360.0
+        /**
+         * Conversion factor for milliradians (Warsaw Pact) to degrees.
+         */
+        const val MIL_WP_TO_DEGREES = 360.0 / 6000.0
+        /**
+         * Conversion factor for degrees to milliradians (Sweden).
+         */
+        const val DEGREES_TO_STRECK = 6300.0 / 360.0
+        /**
+         * Conversion factor for milliradians (Sweden) to degrees.
+         */
+        const val STRECK_TO_DEGREES = 360.0 / 6000.0
+        /**
+         * Conversion factor for degrees to minute of angle (MOA).
+         */
+        const val DEGREES_TO_MOA = 21600.0 / 360.0
+        /**
+         * Conversion factor for minute of angle (MOA) to degrees.
+         */
+        const val MOA_TO_DEGREES = 360.0 / 21600.0
 
         /**
          * Convert radians to degrees
